@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON String</title>
+</head>
+
+<body>
+    
+<h2>Coding Competetion Finalist List :</h2>
+<p id="result"></p>
+
+<script>
+
+    var myObj = { name: "Vibha", age: 16, grade: 11 }
+
+    var myJSON = JSON.stringify(myObj); // converts object to JSON for sending data
+    var newObj = JSON.parse(myJSON); // converts JSON into object while receiving data
+
+    document.getElementById("result").innerHTML = newObj.name;
+    
+</script>
+
+</body>
+
+</html>
