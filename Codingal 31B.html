@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Async/Await</title>
+</head>
+
+<body>
+
+    <h2>Some Basic Calculations:</h2>
+    <h1 id="result"></h1>
+  <script>
+      async function divide(a, b) {
+        let response = await a / b;
+        display(response);
+      }
+
+      function display(some) {
+        document.getElementById("result").innerHTML = some;
+      }
+
+  divide(54, 9)
+
+
+  </script>
+</body>
+
+</html>
